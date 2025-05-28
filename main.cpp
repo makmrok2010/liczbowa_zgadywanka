@@ -8,6 +8,7 @@ int main() {
     int zgadywana_liczba;
     int liczba_prob;
     
+    
     std::cout << "Cześć! Podaj zakres w jakim mam wybrać liczbę od 0:";
     std::cin >> zakres;
     
@@ -18,7 +19,7 @@ int main() {
     std::cin >> zgadywana_liczba;
     liczba_prob = 1;
     
-    while(zgadywana_liczba!= liczba){
+    while(zgadywana_liczba != liczba){  // kod w pętli  wykonuję cyklicznie dopóki warunek jest spełniony
       if(zgadywana_liczba>liczba){
           std::cout << "Moja liczba jest mniejsza.\r\nSpróbój jeszcze raz.\r\n";
       }
@@ -29,7 +30,7 @@ int main() {
         liczba_prob = liczba_prob + 1;
     }
     
-    std::cout << "Brawo, zgadłeś moją liczbę w " << liczba_prob << " próbach";
+    std::cout << "Brawo, zgadłeś moją liczbę w " << liczba_prob << " próbach. \r\n";
     return 0;
 }
 
