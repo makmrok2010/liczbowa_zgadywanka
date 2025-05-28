@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    // Write C++ code here
+
     int zakres;
     int liczba;
     int zgadywana_liczba;
@@ -11,8 +11,8 @@ int main() {
     std::cout << "Cześć! Podaj zakres w jakim mam wybrać liczbę od 0:";
     std::cin >> zakres;
     
-    srand(time(0)); // inicjalizacji generatora liczb losowych - z google
-    liczba = rand()%(zakres+1); // liczba losowa z zakresu 0-zakres - z google
+    srand(time(0));                     // inicjalizacji generatora liczb losowych - z google
+    liczba = rand()%(zakres+1);         // liczba losowa z zakresu 0-zakres - z google
     
     std::cout << "Liczba została wybrana, spróbój ją zgadnąć \r\n";
     std::cin >> zgadywana_liczba;
